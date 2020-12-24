@@ -26,7 +26,7 @@ function labelthumbs(json) {
             d = s.substr(b + 5, c - b - 5);
             if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
                 thumburl = d;
-                thumburl = thumburl.replace("/s72-c/","/s180/");
+                var khria = thumburl.replace("/s72-c/","/s180/");
             } else thumburl = 'http://3.bp.blogspot.com/-O-vjxP03hYo/UXVtH90_iQI/AAAAAAAAAG4/60hz9Rn5FWA/s1600/No+Image+1.gif';
         }
         var postdate = entry.published.$t;
@@ -47,7 +47,7 @@ function labelthumbs(json) {
         monthnames[11] = "Nov";
         monthnames[12] = "Dec";
         document.write('<li class="clearfix">');
-        if (showpostthumbnails == true) document.write('<a href="' + posturl + '" target ="_top"><img class="label_thumb" src="' + thumburl + '"/></a>');
+        if (showpostthumbnails == true) document.write('<a href="' + posturl + '" target ="_top"><img class="label_thumb" src="' + khria + '"/></a>');
         document.write('<strong><a href="' + posturl + '" target ="_top">' + posttitle + '</a></strong><br>');
         if ("content" in entry) {
             var postcontent = entry.content.$t;
