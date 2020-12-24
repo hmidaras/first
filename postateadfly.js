@@ -26,7 +26,10 @@ function labelthumbs(json) {
             d = s.substr(b + 5, c - b - 5);
             if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
                 thumburl = d;
+                alert(d);
+                alert();
                 var khria = thumburl.replace("/s72-c/","/s180/");
+                alert(thumburl);
             } else thumburl = 'http://3.bp.blogspot.com/-O-vjxP03hYo/UXVtH90_iQI/AAAAAAAAAG4/60hz9Rn5FWA/s1600/No+Image+1.gif';
         }
         var postdate = entry.published.$t;
